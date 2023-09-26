@@ -1,8 +1,8 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import styled from "styled-components";
-import PostList from "../list/PostList";
-import Button from "../ui/Button";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import styled from 'styled-components';
+import PostList from '../list/PostList';
+import Button from '../ui/Button';
 import data from '../../data.json';
 
 const Wrapper = styled.div`
@@ -18,10 +18,8 @@ const Container = styled.div`
     width: 100%;
     max-width: 720px;
 
-    & > * {
-        :not(:last-child) {
-            margin-bottom: 16px;
-        }
+    :not(:last-child) {
+        margin-bottom: 16px;
     }
 `;
 
@@ -32,9 +30,9 @@ function MainPage(props) {
         <Wrapper>
             <Container>
                 <Button
-                    title="글 작성하기"
+                    title='글 작성하기'
                     onClick={() => {
-                        navigate("/post-write");
+                        navigate('/post-write');
                     }}
                 />
 
